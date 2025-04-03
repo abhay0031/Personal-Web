@@ -1,0 +1,2 @@
+
+    /* justify content moves horizontally and align items moves vertically */
