@@ -1,107 +1,122 @@
-*{
-
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.Container{
-
-    height: 100vh;
- 
-}
-
-.Header{
-
-    padding-top: 10px;
-    background-color: #252525;
-    color: White;
-    min-height: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-left: 15px;
-
-    color: orange;
-    
-
-}
-
-.listItems2 li {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0;
-    display: flex; 
-    justify-content: flex-end; /* Align items to the right */
-    padding-right: 15px;
-}
-.listItems2 li a{
-    text-decoration: none;
-    color: orange;
-    
-}
-.listItems2 li a :hover{
-    text-decoration: underline;
-}
-
-
-.middle{
-    padding-left: 12px;
-    background-color: #343b3f;
-    
-    min-height: 85%;
-    
-}
-
-
-
-.footer{
-
-    color: rgba(255, 166, 0, 0.77);
-    background-color: #252525;
-    min-height: 6.5%;
-    display: flex;
-    
-
-    /* justify content moves horizontally and align items moves vertically */
-    justify-content: center; 
-    align-items: center;
-    padding :0 10px;
-}
-
-.resume-btn{
-    border-radius: 25px;
-    background-color: #007bff;
-    font-size: 16px;
-    padding: 10px 20px; 
-    text-decoration: none;
+.navbar {
+    background: #252525;
     color: white;
-   
-
-}
-
-.whole-middle{
-
-    color:white;
-    padding-top: 30vh;
-    font-size: 5vh;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.hero {
     text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, #252525, #343b3f);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.social-links img {
+    width: 40px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.resume-btn:hover {
+    background: #0056b3;
+}
+
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.project-list {
+    display: flex;
     justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.info-left-middle {
-    text-align: center;       /* Ensures the text is centered */
+
+.project-card {
+    background: #252525;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s;
 }
 
+.project-card:hover {
+    transform: scale(1.05);
+}
 
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
 
-.info-left-middle img {
-    width: 50px;  
-    height: 50px;
-    border-radius: 50%; 
-    
-    object-fit: cover;  /* Ensure image maintains aspect ratio*/
-} 
-
-
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #252525;
+    color: rgba(255, 166, 0, 0.77);
+}
